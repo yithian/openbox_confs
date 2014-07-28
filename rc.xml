@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -172,48 +173,78 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-  
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
-      <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Right">
-      <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Up">
-      <action name="GoToDesktop"><to>up</to><wrap>no</wrap></action>
+      <action name="GoToDesktop">
+        <to>up</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="C-A-Down">
-      <action name="GoToDesktop"><to>down</to><wrap>no</wrap></action>
+      <action name="GoToDesktop">
+        <to>down</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="S-A-Left">
-      <action name="SendToDesktop"><to>left</to><wrap>no</wrap></action>
+      <action name="SendToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="S-A-Right">
-      <action name="SendToDesktop"><to>right</to><wrap>no</wrap></action>
+      <action name="SendToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="S-A-Up">
-      <action name="SendToDesktop"><to>up</to><wrap>no</wrap></action>
+      <action name="SendToDesktop">
+        <to>up</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="S-A-Down">
-      <action name="SendToDesktop"><to>down</to><wrap>no</wrap></action>
+      <action name="SendToDesktop">
+        <to>down</to>
+        <wrap>no</wrap>
+      </action>
     </keybind>
     <keybind key="W-F1">
-      <action name="GoToDesktop"><to>1</to></action>
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
     </keybind>
     <keybind key="W-F2">
-      <action name="GoToDesktop"><to>2</to></action>
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
     </keybind>
     <keybind key="W-F3">
-      <action name="GoToDesktop"><to>3</to></action>
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
     </keybind>
     <keybind key="W-F4">
-      <action name="GoToDesktop"><to>4</to></action>
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
     </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-  
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -224,9 +255,10 @@
       <action name="Unfocus"/>
     </keybind>
     <keybind key="A-space">
-      <action name="ShowMenu"><menu>client-menu</menu></action>
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
     </keybind>
-    
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -248,7 +280,8 @@
     </keybind>
     <keybind key="C-A-Tab">
       <action name="NextWindow">
-        <panels>yes</panels><desktop>yes</desktop>
+        <panels>yes</panels>
+        <desktop>yes</desktop>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -256,7 +289,6 @@
         </finalactions>
       </action>
     </keybind>
-  
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
@@ -278,7 +310,6 @@
         <direction>down</direction>
       </action>
     </keybind>
-
     <!-- Keybindings for running applications -->
     <keybind key="A-F2">
       <action name="Execute">
