@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu execute="/usr/libexec/openbox-xdg-menu applications" id="applications-menu" label="Applications"/>
+	<menu execute="/usr/libexec/openbox-xdg-menu preferences" id="preferences-menu" label="Preferences"/>
+	<menu execute="/usr/libexec/openbox-xdg-menu system-settings" id="administration-menu" label="Administration"/>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Openbox"/>
+		<item icon="/usr/share/icons/hicolor/22x22/apps/firefox.png" label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/hicolor/22x22/apps/evolution-mail.png" label="Evolution">
+			<action name="Execute">
+				<execute>evolution</execute>
+			</action>
+		</item>
+		<separator/>
+		<item icon="/usr/share/icons/gnome/22x22/apps/gnome-terminal.png" label="XTerm">
+			<action name="Execute">
+				<command>xterm</command>
+			</action>
+		</item>
+		<separator/>
+		<item icon="/usr/share/obmenu/mnu16.png" label="obmenu">
+			<action name="Execute">
+				<command>obmenu</command>
+			</action>
+		</item>
+		<item icon="/usr/share/pixmaps/obconf.png" label="obconf">
+			<action name="Execute">
+				<command>obconf</command>
+			</action>
+		</item>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<separator/>
+		<menu id="root-menu-182119" label="Power">
+			<item label="Suspend">
+				<action name="Execute">
+					<execute>pm-suspend</execute>
+				</action>
+			</item>
+			<item label="Reboot">
+				<action name="Execute">
+					<execute>systemctl reboot</execute>
+				</action>
+			</item>
+			<item label="Off">
+				<action name="Execute">
+					<execute>systemctl halt</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Log Out">
+			<action name="SessionLogout">
+				<prompt>yes</prompt>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
