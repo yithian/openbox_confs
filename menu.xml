@@ -39,7 +39,7 @@
 		<menu id="root-menu-182119" label="Power">
 			<item label="Suspend">
 				<action name="Execute">
-					<execute>pm-suspend</execute>
+					<execute>systemctl suspend</execute>
 				</action>
 			</item>
 			<item label="Reboot">
