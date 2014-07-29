@@ -316,6 +316,38 @@
         <command>gmrun</command>
       </action>
     </keybind>
+    <!-- laptop special button keybindings -->
+    <keybind key="XF86AudioMute">
+        <action name="Execute">
+            <command>pulseaudio-ctl mute</command>
+        </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+        <action name="Execute">
+            <command>pulseaudio-ctl down</command>
+        </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+        <action name="Execute">
+            <command>pulseaudio-ctl up</command>
+        </action>
+    </keybind>
+    <keybind key="XF86AudioMicMute">
+        <action name="Execute">
+            <command>pulseaudio-ctl mute-input</command>
+        </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+        <action name="Execute">
+            <command>xbacklight -dec 5%</command>
+        </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+        <action name="Execute">
+            <command>xbacklight -inc 5%</command>
+        </action>
+    </keybind>
+    <!-- safety first (er... last) -->
     <keybind key="W-l">
       <action name="Execute">
         <command>xscreensaver-command -lock</command>
