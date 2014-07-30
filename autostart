@@ -16,6 +16,8 @@
 #
 #xfce-mcs-manager &
 
+export $(dbus-launch)
+
 xmodmap ~/.xmodmaprc
 xrandr --output DP5 --left-of DP4
 setlayout 1 1 4 0
